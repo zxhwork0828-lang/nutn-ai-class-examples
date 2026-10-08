@@ -1,19 +1,9 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
-</html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tetris / Block Arcade</title><link rel="stylesheet" href="style.css"><script src="game.js" defer></script></head>
+<body><main>
+<header><small>BLOCK ARCADE / 001</small><h1>TETRIS</h1><p>PLAY. STACK. REPEAT.</p></header>
+<div class="layout"><section class="board"><canvas id="board" width="300" height="600" aria-label="Tetris board"></canvas><div id="overlay"><h2 id="message">Ready to stack?</h2><p id="hint">Clear lines. Chase your high score.</p><button id="start">Start game</button></div></section>
+<aside><div class="stats"><div>SCORE<strong id="score">0</strong></div><div>BEST<strong id="best">0</strong></div><div>LINES<strong id="lines">0</strong></div><div>LEVEL<strong id="level">1</strong></div></div><h2>NEXT UP</h2><canvas id="next" width="160" height="120" aria-label="Next piece"></canvas><button id="pause" disabled>Pause</button><button id="restart">New game</button><section class="help"><h2>HOW TO PLAY</h2><p>← → Move</p><p>↑ Rotate</p><p>↓ Soft drop</p><p>Space Hard drop</p><p>P Pause / resume</p><small>The outline shows where your piece will land.</small></section></aside></div>
+<nav aria-label="Touch controls"><button data-action="left" aria-label="Move left">←</button><button data-action="rotate" aria-label="Rotate">↻</button><button data-action="right" aria-label="Move right">→</button><button data-action="down" aria-label="Soft drop">↓</button><button data-action="drop">DROP</button></nav><footer>A little focus. A lot of falling blocks.</footer>
+</main></body></html>
